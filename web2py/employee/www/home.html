@@ -32,22 +32,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link type="text/css" rel="stylesheet" href="css/w3.css" >
+        <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+        <script type="text/javascript" src="js/w3.js" ></script>
         <script type="text/javascript"  src="js/brython.js" ></script>
         <script type="text/javascript" src="js/brython_stdlib.js"></script>
         <script type="text/python" src="py/home.py" ></script>
         <title>Employee Application</title>
     </head>
 
-<body onload="brython()">
+
+ <style>
+.w3-myfont {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+</style>
 
 
-<div id="container"></div>
+<body onload="brython(1)">
 
 
+<div id="container" class="w3-animate-top w3-container"></div>
 
+
+<div id="detail" class="w3-animate-left w3-container"></div>
 
 </body>
 
 
 
 </html>
+
