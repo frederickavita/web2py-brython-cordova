@@ -155,6 +155,7 @@ if configuration.get('scheduler.enabled'):
 # -------------------------------------------------------------------------
 # auth.enable_record_versioning(db)
 db.define_table('employee',
-                Field('full_name', 'string'))
+                Field('full_name', 'string'),
+                Field("job", 'string'))
 
 
