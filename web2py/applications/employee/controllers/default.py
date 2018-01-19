@@ -3,6 +3,15 @@
 # This is a sample controller
 # this file is released under public domain and you can use without limitations
 # -------------------------------------------------------------------------
+response.headers['Access-Control-Allow-Origin'] = '*'
+response.headers['Access-Control-Max-Age'] = 86400
+response.headers['Access-Control-Allow-Headers'] = 'Origin'
+response.headers['Access-Control-Allow-Methods'] = 'GET'
+response.headers['Access-Control-Allow-Methods'] = 'POST'
+response.headers['Access-Control-Allow-Credentials'] = 'true'
+if request.env.http_origin:
+        response.headers['Access-Control-Allow-Origin'] = '*'
+
 
 # ---- example index page ----
 def liste_employee():
