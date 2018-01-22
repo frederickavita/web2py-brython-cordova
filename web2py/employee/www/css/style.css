@@ -1,0 +1,20 @@
+@font-face { font-family: myfont;
+       src: url('../fonts/Graduate-Regular.ttf'); }
+
+ /* for single.html */
+h1{
+font-family: 'myfont', cursive;
+
+}
+
+ /* for all file.html */
+#loading{
+display: block;
+  color:lightslategrey
+}
+
+ /* for all file.html */
+i.fa.fa-spinner.w3-spin{
+font-size: 64px;
+
+}
