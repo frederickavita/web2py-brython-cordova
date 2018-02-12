@@ -17,12 +17,12 @@ def title_header():
 
 #create searchbar
 def searchbar():
-    div = html.DIV(html.INPUT(Class="w3-input w3-border",
+    return html.DIV(html.INPUT(Class="w3-input w3-border",
                               type="search", id='search'),
                    Class="w3-panel w3-border w3-round-xxlarge",
                    id="searchpanel",
                    style={"padding": "1.01em 16px"})
-    return div
+
 
 
 
@@ -58,6 +58,7 @@ def homepage():
                                       searchbar(),employee_list()
     div1 <= header + search + list_empl
     win.location.hash = "home"
+    doc['loading'].style.display = "none"
     return div1
 
 

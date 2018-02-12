@@ -59,3 +59,6 @@ CREATE TABLE "employee"(
     "full_name" CHAR(512)
 );
 success!
+timestamp: 2018-01-18T10:25:42.745504
+ALTER TABLE "employee" ADD "job" CHAR(512);
+success!

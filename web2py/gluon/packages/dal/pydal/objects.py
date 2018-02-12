@@ -1666,7 +1666,7 @@ class Field(Expression, Serializable):
         for key in others:
             setattr(self, key, others[key])
 
-    def bind(self, table):
+    def bind(self, table: object) -> object:
         if self._table is not None:
             raise ValueError(
                 'Field %s is already bound to a table' % self.longname)
