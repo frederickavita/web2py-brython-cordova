@@ -1,0 +1,13 @@
+#login,
+#register{
+display: none;    
+}
+
+#welcome{
+position:absolute;
+top: 50%;
+left: 50%;
+margin-top: -96px;
+margin-left: -59px;    
+
+}
